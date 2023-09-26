@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Blue Website</title>
+    <title>LEMN Solutions</title>
     <style>
         body {
-            background-color: #3498db; /* Blue background color */
+            background-color: #1f3a68; /* Dark blue background color */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -14,14 +14,22 @@
         }
 
         header {
-            background-color: #2980b9; /* Header background color */
-            text-align: center;
+            background-color: #1f3a68; /* Header background color */
             padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-right: 20px;
         }
 
         h1 {
             font-size: 36px;
             margin: 0;
+            text-align: center;
+            flex-grow: 1; /* Allows the title to take up remaining space */
         }
 
         main {
@@ -32,6 +40,14 @@
             border-radius: 10px;
         }
 
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
         p {
             font-size: 18px;
             line-height: 1.5;
@@ -40,15 +56,25 @@
 </head>
 <body>
     <header>
+        <img class="logo" src="your-logo.png" alt="Logo"> <!-- Replace 'your-logo.png' with your actual logo file -->
         <h1>LEMN Solutions</h1>
     </header>
 
     <main>
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna eu risus bibendum tristique. Nulla facilisi.</p>
+        <section>
+            <h2>About Us</h2>
+            <p>We are LEMN Solutions, a company dedicated to providing innovative solutions to our clients. Our mission is to...</p>
+        </section>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions, please email us at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+        <section>
+            <h2>What We Produce</h2>
+            <p>We specialize in producing cutting-edge products and services that...</p>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, please feel free to contact us at <a href="mailto:contact@lemnsolutions.com">contact@lemnsolutions.com</a>.</p>
+        </section>
     </main>
 </body>
 </html>
